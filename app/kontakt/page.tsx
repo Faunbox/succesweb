@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="center container">
       <p className="title">Kontakt</p>
-      <div className="flex min-h-[80vh] flex-col md:flex-row">
+      <div className="center flex min-w-full flex-col md:min-h-[80vh] md:flex-row">
         <TextComponent />
         <FormComponent />
       </div>

@@ -23,7 +23,6 @@ const Offert = () => {
               width={100}
               height={50}
               alt="ikona google ads"
-              className="float-left"
             />
             <p className="my-2">{obj.desc}</p>
           </li>

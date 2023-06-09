@@ -15,7 +15,9 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <p className="mr-4 text-2xl font-bold">SuccessWeb</p>
+          <Link href={"/"}>
+            <p className="mr-4 text-2xl font-bold">SuccessWeb</p>
+          </Link>
         </div>
       </div>
     </nav>

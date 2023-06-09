@@ -2,9 +2,37 @@ import { navigation } from "@/data/navigation";
 import Link from "next/link";
 
 const Footer = () => {
+  interface Iobj {
+    href: string;
+    desc: String;
+  }
+
+  const footerOffert: Iobj[] = [
+    {
+      href: "/oferta/strony-internetowe",
+      desc: "Strony internetowe",
+    },
+    {
+      href: "/oferta/ecommerce",
+      desc: "Sklepy internetowe",
+    },
+    {
+      href: "/oferta/seo",
+      desc: "Pozycjonowanie stron",
+    },
+    {
+      href: "/oferta/google-ads",
+      desc: "Marketing internetowy",
+    },
+    {
+      href: "/oferta/oprogramowanie-dla-firm",
+      desc: "Oprogramowanie dla firm",
+    },
+  ];
+
   return (
-    <footer className="center flex w-screen py-4">
-      <div className="container grid grid-flow-row grid-cols-3 md:grid-flow-col">
+    <footer className="center bordet-t flex w-screen border-gray-400 py-4">
+      <div className="container flex flex-col items-center justify-around sm:flex-row">
         <section className="py4 ">
           <p className="p-2 text-2xl font-bold">SuccesWeb</p>
           <div>DANE FIRMY</div>
@@ -22,10 +50,13 @@ const Footer = () => {
         <section className="p-4 ">
           <h3 className="pb-4 text-lg font-bold">Oferta</h3>
           <section className="flex flex-col gap-2">
-            <Link href={"oferta/strony-internetowe"}>Strony internetowe</Link>
-            <Link href={"oferta/ecommerce"}>E-commerce</Link>
-            <Link href={"oferta/seo"}>Pozycjnonowanie</Link>
-            <Link href={"oferta/google-ads"}>Kampanie GoogleAds</Link>
+            {footerOffert.map(({ href, desc }) => {
+              return (
+                <Link href={href} key={href}>
+                  {desc}
+                </Link>
+              );
+            })}
           </section>
         </section>
       </div>

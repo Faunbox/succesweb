@@ -6,7 +6,7 @@ const Services = () => {
     <div className="center component my-4">
       <h2 className="text-xl md:text-2xl">Zakres naszych usług</h2>
       <section>
-        <ul className="center flex flex-row flex-wrap">
+        <ul className="center flex flex-row flex-wrap items-start">
           {services.map((obj, index) => (
             <li
               className="center m-4 flex max-w-[270px] flex-col items-center border p-4"
