@@ -31,8 +31,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="center bordet-t flex w-screen border-gray-400 py-4">
-      <div className="container flex flex-col items-center justify-around sm:flex-row">
+    <footer className="center bordet-t container flex w-screen border-gray-700 py-4">
+      <div className="flex w-screen flex-col items-center justify-around sm:flex-row">
         <section className="py4 ">
           <p className="p-2 text-2xl font-bold">SuccesWeb</p>
           <div>DANE FIRMY</div>
