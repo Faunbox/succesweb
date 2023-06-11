@@ -4,10 +4,9 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <nav className="center sticky left-0 top-0 flex w-screen bg-white/70 p-4 backdrop-blur-sm">
+    <nav className="center sticky left-0 top-0 flex min-w-screen bg-white/70 p-4 backdrop-blur-sm">
       <div className="container">
-        {/* <div ></div> */}
-        <div className="flex flex-row items-start justify-start">
+        <div className="center flex flex-row">
           <ul className="container mx-auto flex flex-col items-start justify-start">
             {navigation.map((obj) => (
               <li className="mx-3" key={obj.name}>

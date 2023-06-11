@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="center flex min-h-[75vh] w-11/12 flex-col border-2">
+    <section className="center container m-4 mx-auto flex min-h-[75vh] w-[90vw] max-w-[1536px] flex-col border-2">
       <div className="items-left flex w-4/6 flex-col justify-center text-left md:ml-20">
         <h2 className="pb-4 text-5xl md:text-7xl">Twój</h2>
         <h2 className="pb-4 text-5xl md:text-7xl">partner w</h2>

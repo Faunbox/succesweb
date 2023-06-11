@@ -10,7 +10,7 @@ export default function Home() {
   );
 
   return (
-    <main className="center overflow-x-hidden w-screen container">
+    <main className="w-screen overflow-x-hidden">
       <Hero />
       <Suspense fallback={<p>Ładowanie.....</p>}>
         <Services />

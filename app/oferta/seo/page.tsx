@@ -1,6 +1,6 @@
 const SEO = () => {
   return (
-    <div className="container flex flex-col items-center justify-around">
+    <div className="center container flex flex-col">
       <h2 className="title">Pozycjonowanie stron (SEO)</h2>
       <p className="m-4">
         Wiedza o tym, jak skutecznie pozycjonować stronę w wyszukiwarkach, może

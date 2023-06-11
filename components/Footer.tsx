@@ -31,34 +31,36 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="center bordet-t container flex w-screen border-gray-700 py-4">
-      <div className="flex w-screen flex-col items-center justify-around sm:flex-row">
-        <section className="py4 ">
-          <p className="p-2 text-2xl font-bold">SuccesWeb</p>
-          <div>DANE FIRMY</div>
-        </section>
-        <section className="p-4 ">
-          <h3 className="pb-4 text-lg font-bold">Menu</h3>
-          <div className="mb-2 flex flex-col">
-            {navigation.map((obj) => (
-              <Link href={obj.href} key={obj.name} className="p-2">
-                {obj.name}
-              </Link>
-            ))}
-          </div>
-        </section>
-        <section className="p-4 ">
-          <h3 className="pb-4 text-lg font-bold">Oferta</h3>
-          <section className="flex flex-col gap-2">
-            {footerOffert.map(({ href, desc }) => {
-              return (
-                <Link href={href} key={href}>
-                  {desc}
-                </Link>
-              );
-            })}
+    <footer className="min-w-screen my-4 border-t border-gray-400">
+      <div className="center container flex">
+        <div className="flex w-screen flex-col items-center justify-around sm:flex-row">
+          <section className="py4 w-full md:w-2/6">
+            <p className="p-2 text-2xl font-bold">SuccesWeb</p>
+            <div>DANE FIRMY</div>
           </section>
-        </section>
+          <section className="w-full p-4 md:w-2/6">
+            <h3 className="pb-4 text-lg font-bold">Menu</h3>
+            <div className="mb-2 flex flex-col">
+              {navigation.map((obj) => (
+                <Link href={obj.href} key={obj.name} className="p-2">
+                  {obj.name}
+                </Link>
+              ))}
+            </div>
+          </section>
+          <section className="w-full p-4 md:w-2/6">
+            <h3 className="pb-4 text-lg font-bold">Oferta</h3>
+            <section className="flex flex-col gap-2">
+              {footerOffert.map(({ href, desc }) => {
+                return (
+                  <Link href={href} key={href}>
+                    {desc}
+                  </Link>
+                );
+              })}
+            </section>
+          </section>
+        </div>
       </div>
     </footer>
   );
