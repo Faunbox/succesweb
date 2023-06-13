@@ -10,18 +10,22 @@ const Footer = () => {
   const footerOffert: Iobj[] = [
     {
       href: "/oferta/strony-internetowe",
-      desc: "Strony internetowe",
+      desc: "Strony WWW",
     },
     {
       href: "/oferta/ecommerce",
       desc: "Sklepy internetowe",
     },
     {
+      href: "/oferta/grafika",
+      desc: "Projektowanie grafik",
+    },
+    {
       href: "/oferta/seo",
       desc: "Pozycjonowanie stron",
     },
     {
-      href: "/oferta/google-ads",
+      href: "/oferta/marketing-internetowy",
       desc: "Marketing internetowy",
     },
     {

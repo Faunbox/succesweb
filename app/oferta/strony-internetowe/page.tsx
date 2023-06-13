@@ -41,6 +41,9 @@ const Websites = () => {
         <section className="center w-full">
           <div className="flex flex-col">
             <h3 className="title">Cennik</h3>
+            <h4 className="mb-4 text-xs">
+              Każde zlecenie wyceniane jest indywidualnie
+            </h4>
             <div className="flex w-full flex-col justify-around md:flex-row">
               <div className="w-full md:w-2/6 ">Strony z gotowego szablonu</div>
               <div className="w-full md:w-2/6 ">Strony typu landing page</div>
