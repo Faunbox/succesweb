@@ -19,7 +19,7 @@ export const services = [
   },
   {
     title: "Kampanie Google Ads",
-    href: "/oferta/google-ads",
+    href: "/oferta/marketing-internetowy",
     icon: "/images/googleAds.png",
     desc: "Kampanie Google Ads pomogą Twojej firmie w dotarciu do nowych klientów co przekłada się na większe zyski dla Twojej firmy",
   },
